@@ -1,0 +1,20 @@
+[project]
+name = "cftd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ase>=3.29.0",
+    "huggingface>=0.0.1",
+    "huggingface-hub>=1.25.1",
+    "mace-torch>=0.3.16",
+    "matplotlib>=3.11.0",
+    "pandas>=3.0.3",
+    "pot>=0.9.6.post1",
+    "pymatgen>=2026.5.4",
+    "scipy>=1.18.0",
+    "spglib>=2.7.0",
+    "torch>=2.12.1",
+    "torch-geometric>=2.8.0",
+]
