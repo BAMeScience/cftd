@@ -27,16 +27,30 @@ A detailed discription is published on arxiv.
 #### Installation
 We recommend using uv:
 
-- Clone this repository
-- Navigate to the folder
-- Use uv sync
-- Verify package installations with uv pip list
+```bash
+# Navigate to the respective project folder, then clone this repository
+git clone https://github.com/BAMeScience/cftd.git
+
+# Create python environment
+cd cftd
+uv sync
+uv pip list
+```
 
 Without uv:
-- python3.12 -m venv .venv
-- source .venv/bin/activate
-- python -m pip install --upgrade pip
-- pip install .
+```bash
+# Navigate to the respective project folder, then clone this repository
+git clone https://github.com/BAMeScience/cftd.git
+
+# Create python environment
+cd cftd
+python -m venv .venv
+source .venv/bin/activate
+
+# Install package in editable mode
+pip install --upgrade pip
+pip install .
+```
 
 #### Scoring your model with CFTD
 
