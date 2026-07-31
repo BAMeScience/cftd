@@ -14,6 +14,13 @@ The pre-trained version is provided in the checkpoints folder of this repository
 if you trained your generative model on the MP20 train-val-test split from https://github.com/txie-93/cdvae/tree/main/data/mp_20.
 
 The coarse MACE Featurizer 
+This featurizer uses the invariant, hidden layers from a pre-trained MACE foundation model (MACE-MP-0b3) to evaluate the quality of the generated materials. 
+The layer are mean pooled and randomly projected to create the final feature space. This compressed representation of MACE MLIPs is a good indicator of the general physical and chemical quality of a structure, although its coarse nature is not a perfect representation of the materials parameters.
 
-
+Both featurizers are combined and used in an Optimal Transport framework to penalize memorized and "low quality" materials simultaneously within a single metric. 
+Generally, lower CFTD values indicate better perfomance.
 A detailed discription is published on arxiv.
+
+
+
+
