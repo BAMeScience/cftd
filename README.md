@@ -51,5 +51,11 @@ In this case, the pre-trained Identity Featurizer will be used.
 In case you used a different dataset, it is recommended to 
 - Retrain the contrastive GNN by executing train_mp20.py in scripts with the train-val-test split of your data 
 - Update the checkpoint path in CoarseFineTransportDistance.py
-- Call computeCFTD on your structures  
+- Call computeCFTD on your structures
+
+If you want to retrain the contrastive GNN either way, you can download the MP20 data by calling download_mp20.py
+
+#### Compare your model to existing models
+To compare your model to other published generative models, call download_xtalmet_models.py and calculate the CFTD for all models relevant for you. All of these models were trained on MP20. 
+Lower CFTD values generally indicate better models, in the sense that the quality distribtion of the training set is covered well, while the generated structures are not memorized directly from the train set.
 
