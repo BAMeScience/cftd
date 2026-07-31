@@ -55,7 +55,7 @@ In case you used a different dataset, it is recommended to
 
 If you want to retrain the contrastive GNN either way, you can download the MP20 data by calling download_mp20.py
 
-#### Compare your model to existing models
+#### Compare different models
 To compare your model to other published generative models, call download_xtalmet_models.py and calculate the CFTD for all models relevant for you. All of these models were trained on MP20. 
 Lower CFTD values generally indicate better models, in the sense that the quality distribtion of the training set is covered well, while the generated structures are not memorized directly from the train set.
 
